@@ -1,184 +1,342 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kurs Vitrini</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- SEO Meta -->
+    <title>Udemy Kurs Vitrini | Öne Çıkan Kurslar</title>
+    <meta name="description" content="Antik mitlerden felsefeye, edebiyattan 3D web geliştirmeye kadar uzanan özel kurs koleksiyonu." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.udemy.com/" />
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <!-- Open Graph -->
+    <meta property="og:title" content="Udemy Kurs Vitrini" />
+    <meta property="og:description" content="Antik mitlerden felsefeye, edebiyattan 3D web geliştirmeye kadar uzanan özel kurs koleksiyonu." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.udemy.com/" />
+    <meta property="og:image" content="https://img-c.udemycdn.com/course/480x270/7195039_1955.jpg" />
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#000;
-    overflow:hidden;
-}
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-.owl-carousel{
-    width:100%;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-.item{
-    position:relative;
-    height:200px;
-    overflow:hidden;
-}
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.item img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    display:block;
-}
+        body {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
+        /* ---------- CAROUSEL KAPSI ---------- */
+        .owl-carousel {
+            width: 92%;
+            max-width: 1100px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
 
-.overlay h3{
-    color:#fff;
-    font-size:22px;
-    line-height:1.4;
-    margin-bottom:18px;
-    text-shadow:0 2px 6px rgba(0,0,0,.7);
-}
+        /* ---------- SLIDE ÖGESİ ---------- */
+        .item {
+            position: relative;
+            height: 520px;
+            /* masaüstü yüksekliği */
+            overflow: hidden;
+        }
 
-.btn{
-    display:inline-block;
-    padding:10px 28px;
-    border:2px solid #fff;
-    border-radius:30px;
-    color:#fff;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:bold;
-    transition:.3s;
-}
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
 
-.btn:hover{
-    background:#fff;
-    color:#000;
-}
+        .item:hover img {
+            transform: scale(1.03);
+        }
 
-.owl-theme .owl-nav,
-.owl-theme .owl-dots{
-    display:none;
-}
-</style>
+        /* ---------- OVERLAY (KARARTMA + METİN) ---------- */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.70) 0%,
+                    rgba(0, 0, 0, 0.25) 60%,
+                    rgba(0, 0, 0, 0.70) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 25px;
+        }
+
+        .overlay h3 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 22px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+            max-width: 800px;
+        }
+
+        /* ---------- BUTON ---------- */
+        .btn {
+            display: inline-block;
+            padding: 14px 38px;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(4px);
+            transition: all 0.35s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #0a0a0a;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+        }
+
+        /* ---------- OWL ÖZELLEŞTİRMELER ---------- */
+        .owl-theme .owl-nav,
+        .owl-theme .owl-dots {
+            display: none;
+        }
+
+        /* ---------- MOBİL UYUM ---------- */
+        @media (max-width: 768px) {
+            .item {
+                height: 400px;
+            }
+            .overlay h3 {
+                font-size: 1.4rem;
+                margin-bottom: 16px;
+            }
+            .btn {
+                padding: 11px 26px;
+                font-size: 0.9rem;
+            }
+            .owl-carousel {
+                width: 98%;
+                border-radius: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                height: 340px;
+            }
+            .overlay h3 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+            .btn {
+                padding: 9px 20px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <!-- JSON‑LD: 7 Kurs (Schema.org) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Udemy Kurs Vitrini",
+            "description": "Öne çıkan 7 kurs",
+            "numberOfItems": 7,
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Course",
+                    "name": "Antik Mitlerden Modern Klasiklere",
+                    "url": "https://www.udemy.com/course/antik-mitlerden-modern-klasiklere-kult-eserler-ve-yazarlk/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Course",
+                    "name": "Felsefenin Evrimi",
+                    "url": "https://www.udemy.com/course/felsefenin-evrimi-erken-bilgelikten-sistematik-dusunceye/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Course",
+                    "name": "Klasik Edebiyatı Derinlemesine Anlamak ve Yorumlamak",
+                    "url": "https://www.udemy.com/course/klasik-edebiyat-derinlemesine-anlamak-ve-yorumlamak/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Course",
+                    "name": "Man and His Symbols: Jung, Sembol, Rüya ve Bilinç",
+                    "url": "https://www.udemy.com/course/man-and-his-symbols-jung-sembol-ruya-ve-bilincds/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "Course",
+                    "name": "Herkes Yazar: Bilgiyi Kaynaklı Eserlere Dönüştürme",
+                    "url": "https://www.udemy.com/course/herkes-yazar-bilgiyi-kaynakl-eserlere-donusturme/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                    "@type": "Course",
+                    "name": "Three.js Uygulamalı 3D Web Geliştirme İlk Adım",
+                    "url": "https://www.udemy.com/course/threejs-uygulamali-3d-web-gelistirme-ilk-adim/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                    "@type": "Course",
+                    "name": "İskenderiye Kütüphanesi",
+                    "url": "https://www.udemy.com/course/iskenderiye-kutuphanesi-kayp-bilgi-evrimi-antik-sistem/",
+                    "provider": { "@type": "Organization", "name": "Udemy" }
+                }
+            }]
+        }
+    </script>
 </head>
 
 <body>
 
-<div class="owl-carousel owl-theme">
+    <!-- CAROUSEL (yalnızca 7 kurs, başlık yok) -->
+    <div class="owl-carousel owl-theme">
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7195039_1955.jpg" alt="">
-        <div class="overlay">
-            <h3>Antik Mitlerden Modern Klasiklere</h3>
-            <a href="https://www.udemy.com/course/antik-mitlerden-modern-klasiklere-kult-eserler-ve-yazarlk/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 1. Antik Mitler -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7247227_2c9f.jpg" alt="Antik Mitlerden Modern Klasiklere Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>Antik Mitlerden Modern Klasiklere</h3>
+                <a href="https://www.udemy.com/course/antik-mitlerden-modern-klasiklere-kult-eserler-ve-yazarlk/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/6984953_c991_3.jpg" alt="">
-        <div class="overlay">
-            <h3>Felsefenin Evrimi</h3>
-            <a href="https://www.udemy.com/course/felsefenin-evrimi-erken-bilgelikten-sistematik-dusunceye/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 2. Felsefenin Evrimi -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7195039_1955.jpg" alt="Felsefenin Evrimi Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>Felsefenin Evrimi</h3>
+                <a href="https://www.udemy.com/course/felsefenin-evrimi-erken-bilgelikten-sistematik-dusunceye/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/6988969_416f_2.jpg" alt="">
-        <div class="overlay">
-            <h3>Klasik Edebiyatı Derinlemesine Anlamak ve Yorumlamak</h3>
-            <a href="https://www.udemy.com/course/klasik-edebiyat-derinlemesine-anlamak-ve-yorumlamak/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 3. Klasik Edebiyat -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/6984953_c991_3.jpg" alt="Klasik Edebiyatı Derinlemesine Anlamak Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>Klasik Edebiyatı Derinlemesine Anlamak ve Yorumlamak</h3>
+                <a href="https://www.udemy.com/course/klasik-edebiyat-derinlemesine-anlamak-ve-yorumlamak/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7131075_0d46_3.jpg" alt="">
-        <div class="overlay">
-            <h3>Modern İnsan ve Genetik Miras</h3>
-            <a href="https://www.udemy.com/course/modern-insan-ve-genetik-miraskendi-potansiyelini-kesfetme/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 4. Man and His Symbols -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7318111_c04c_4.jpg" alt="Man and His Symbols: Jung, Sembol, Rüya ve Bilinç Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>Man and His Symbols: Jung, Sembol, Rüya ve Bilinç</h3>
+                <a href="https://www.udemy.com/course/man-and-his-symbols-jung-sembol-ruya-ve-bilincds/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7155157_47ca.jpg" alt="">
-        <div class="overlay">
-            <h3>AI ile HTML ile Her Şeyi Yaparsın</h3>
-            <a href="https://www.udemy.com/course/ai-ile-aha-html-ile-her-seyi-yaparsn-sor-ogren-uret/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 5. Herkes Yazar -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7317001_1302.jpg" alt="Araştırma ve Kaynak Okuryazarlığı: Bilgiyi Sentezleme" loading="lazy" />
+            <div class="overlay">
+                <h3>Araştırma ve Kaynak Okuryazarlığı: Bilgiyi Sentezleme</h3>
+                <a href="https://www.udemy.com/course/herkes-yazar-bilgiyi-kaynakl-eserlere-donusturme/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7247227_2c9f.jpg" alt="">
-        <div class="overlay">
-            <h3>Zihinsel Matris: Görsel Düşünme ve Hikâye Üretimi</h3>
-            <a href="https://www.udemy.com/course/zihinsel-matris-gorsel-dusunme-ve-hikaye-uretimi/" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 6. Three.js -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7315767_2c1a.jpg" alt="Three.js Uygulamalı 3D Web Geliştirme İlk Adım Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>Three.js Uygulamalı 3D Web Geliştirme İlk Adım</h3>
+                <a href="https://www.udemy.com/course/threejs-uygulamali-3d-web-gelistirme-ilk-adim/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7156319_f5cf.jpg" alt="">
-        <div class="overlay">
-            <h3>İskenderiye Kütüphanesi</h3>
-            <a href="https://www.udemy.com/course/iskenderiye-kutuphanesi-kayp-bilgi-evrimi-antik-sistem" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+        <!-- 7. İskenderiye Kütüphanesi -->
+        <div class="item">
+            <img src="https://img-c.udemycdn.com/course/480x270/7156319_f5cf.jpg" alt="İskenderiye Kütüphanesi Kursu" loading="lazy" />
+            <div class="overlay">
+                <h3>İskenderiye Kütüphanesi</h3>
+                <a href="https://www.udemy.com/course/iskenderiye-kutuphanesi-kayp-bilgi-evrimi-antik-sistem/"
+                   target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
+            </div>
         </div>
+
     </div>
+    <!-- /owl-carousel -->
 
-    <div class="item">
-        <img src="https://img-c.udemycdn.com/course/480x270/7012275_5d12_4.jpg" alt="">
-        <div class="overlay">
-            <h3>Bilimsel Duygusal Farkındalık ve Kişisel Gelişim</h3>
-            <a href="https://www.udemy.com/course/bilimsel-duygusal-farkndalk-ve-kisisel-gelisim-egitimi" target="_blank" rel="noopener noreferrer" class="btn">İncele</a>
-        </div>
-    </div>
+    <!-- jQuery & Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<script>
-$(function(){
-
-    $(".owl-carousel").owlCarousel({
-
-        items:1,
-        loop:true,
-        margin:0,
-
-        autoplay:true,
-        autoplayTimeout:3500,
-        autoplayHoverPause:true,
-
-        smartSpeed:700,
-
-        dots:false,
-        nav:false,
-
-        animateOut:"fadeOut"
-
-    });
-
-});
-</script>
+    <script>
+        $(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                smartSpeed: 700,
+                dots: false,
+                nav: false,
+                animateOut: "fadeOut"
+            });
+        });
+    </script>
 
 </body>
 </html>
