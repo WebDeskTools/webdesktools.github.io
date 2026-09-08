@@ -10,20 +10,6 @@
   
  
   <url>
-    <loc>https://okankaplanedu.github.io/akademik-kitaplar/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-09-05</lastmod>
-  </url>
-
-
-  <url>
-    <loc>https://okankaplanedu.github.io/antik-mitlerden-modern-klasiklere-kult-eserler-ve-yazarlik/kadim-sesler-edebiyatin-dinsel-ve-mistik-koklerini-cozumleme/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-09-05</lastmod>
-  </url>
-  <url>
     <loc>https://okankaplanedu.github.io/antik-mitlerden-modern-klasiklere-kult-eserler-ve-yazarlik/psikolojik-kok-ruya-bilincalti-arketip-golge-ve-bolunmus-ben/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -263,12 +249,7 @@
     <priority>0.8</priority>
     <lastmod>2026-09-05</lastmod>
   </url>
-  <url>
-    <loc>https://okankaplanedu.github.io/klasik-edebiyati-derinlemesine-anlamak-ve-yorumlamak/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-09-05</lastmod>
-  </url>
+ 
   <url>
     <loc>https://okankaplanedu.github.io/klasik-edebiyati-derinlemesine-anlamak-ve-yorumlamak/klasik-edebiyati-derinlemesine-anlamak-ve-yorumlamak/</loc>
     <changefreq>weekly</changefreq>
@@ -767,12 +748,7 @@
     <priority>0.8</priority>
     <lastmod>2026-09-05</lastmod>
   </url>
-  <url>
-    <loc>https://okankaplanedu.github.io/felsefenin-evrimi-erken-bilgelikten-sistematik-dusunceye/yeni-konu/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-09-05</lastmod>
-  </url>
+ 
   <url>
     <loc>https://okankaplanedu.github.io/felsefenin-evrimi-erken-bilgelikten-sistematik-dusunceye/yeni-konu-1/</loc>
     <changefreq>weekly</changefreq>
@@ -995,12 +971,7 @@
     <priority>0.7</priority>
     <lastmod>2026-09-05</lastmod>
   </url>
-  <url>
-    <loc>https://okankaplanedu.github.io/leonardo-da-vinci/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-09-05</lastmod>
-  </url>
+ 
   <url>
     <loc>https://okankaplanedu.github.io/leonardo-da-vinci/kokler-leonardo-nasil-leonardo-oldu/</loc>
     <changefreq>weekly</changefreq>
